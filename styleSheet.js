@@ -1,10 +1,10 @@
-export default function styleSheet(){
+export default function styleSheet(element, width, height, backgroundColor, color, border, boxSizing, margin, font, display, center){
   element.style.width = width
   element.style.height = height
   element.style.backgroundColor = backgroundColor
   element.style.color = color
   element.style.border = border
-  element.style.boxSize = border-size
+  element.style.boxSizing = boxSizing
   element.style.margin = margin
   element.style.fontSize = font
   element.style.display = display
