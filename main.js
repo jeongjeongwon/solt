@@ -1,3 +1,4 @@
+import create from "./createElement.js"
 import styleSheet from "./styleSheet.js"
 
 //* 기본 Layout 틀
@@ -16,6 +17,9 @@ const sidebar = document.createElement('sidebar')
 main.appendChild(sidebar)
 const centerbar = document.createElement('centerbar')
 main.appendChild(centerbar)
+
+//* 생성자
+create(sidebar, 'section')
 
 //* style 지정
 styleSheet(root, '100vw', '100vh', 'none', 'none', 'none', 'none', '0', 'none', 'inline', 'center');
