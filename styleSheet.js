@@ -1,21 +1,26 @@
-export function styleSheet1(element, width, height, backgroundColor, border, margin,){
+function elementSize(element, width, height, margin, boxSizing){
   element.style.width = width
   element.style.height = height
+  element.style.margin = margin
+  element.style.boxSizing = boxSizing
+}
+
+function elementShape(element, backgroundColor, border, radius){
   element.style.backgroundColor = backgroundColor
   element.style.border = border
-  element.style.margin = margin
+  element.style.borderRadius = radius
 }
 
-export function styleSheet2(color, boxSizing){
+function elementText(element, color, align){
   element.style.color = color
-  element.style.boxSizing = boxSizing
   element.style.fontSize = font
+  element.style.textAlign = align
 }
 
-export function styleSheet3(display, justify, align){
+function elementDisplay(element, display, justify, align){
   element.style.display = display
   element.style.justifyContent = justify
   element.style.alignItems = align
 }
 
-export function styleSheet4(){}
+export{elementSize, elementShape, elementText, elementDisplay}

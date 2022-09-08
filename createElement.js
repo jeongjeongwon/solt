@@ -1,7 +1,9 @@
-export default function createElement(parent, section){
-  let menus = ["유기동물", "게시판", "메신저", "홈페이지 소개"]
-  for(let i = 0; i < menus.length; i++){
-    let create = document.createElement(section)
+function createElementList(list, parent, child){
+  for(let i = 0; i < list.length; i++){
+    let create = document.createElement(child)
+    create.textContent = list[i]
     parent.appendChild(create)
   }
 }
+
+export{createElementList}
