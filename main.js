@@ -17,6 +17,7 @@ elementDisplay(body, 'flex', 'center', 'center')
 
 elementSize(header, '100vw', '10vh', '0', '0')
 elementShape(header, 'skyblue', '0', '0')
+elementDisplay(header, 'flex', 'center', 'center')
 
 elementSize(main, '100vw', '80vh', '0', '0')
 elementShape(main, 'white', '0', '0')
@@ -24,6 +25,46 @@ elementDisplay(main, 'flex', 'center', 'center')
 
 elementSize(footer, '100vw', '10vh', '0', '0')
 elementShape(footer, 'skyblue', '0', '0')
+elementDisplay(footer, 'flex', 'center', 'center')
+
+//header에 들어갈 내부 함수 구성
+const first = document.createElement('img')
+header.appendChild(first)
+elementSize(first, "20%", "100%", "0", "border-box")
+elementDisplay(first, 'flex', 'center', 'center')
+const second = document.createElement('div')
+header.appendChild(second)
+elementSize(second, "60%", "100%", "0", "border-box")
+elementDisplay(second, 'flex', 'center', 'center')
+const third = document.createElement('div')
+header.appendChild(third)
+elementSize(third, "20%", "100%", "0", "border-box")
+elementDisplay(third, 'flex', 'center', 'center')
+
+// 사이트의 이름과 배너 구역
+const venerImage = document.createElement('div')
+first.appendChild(venerImage)
+const venerText = document.createElement('div')
+first.appendChild(venerText)
+elementSize(venerImage, '50%', '100%', '0', 'border-box')
+elementShape(venerImage, 'silver', '0', '50%')
+elementSize(venerText, '50%', '100%', '0', 'border-box')
+
+// 검색창
+const searchbar = document.createElement('input')
+second.appendChild(searchbar)
+elementSize(searchbar, '90%', '50%', '0', 'border-box')
+elementShape(searchbar, 'white', '0', '20px')
+
+// 회원가입과 로그인 버튼
+const login = document.createElement('button')
+third.appendChild(login)
+const signUp = document.createElement('button')
+third.appendChild(signUp)
+elementSize(login, '40%', '50%', '10px', 'border-box')
+elementShape(login, 'white', '0', '20px')
+elementSize(signUp, '40%', '50%', '10px', 'border-box')
+elementShape(signUp, 'white', '0', '20px')
 
 // main에 들어갈 내부 함수 설정
 const mainframe = document.createElement('div')
@@ -68,5 +109,3 @@ for(let i = 0; i < animelList.length; i++){
   elementShape(animelText, 'white', '0', '20px')
   
 }
-
-

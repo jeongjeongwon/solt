@@ -23,4 +23,11 @@ function elementDisplay(element, display, justify, align){
   element.style.alignItems = align
 }
 
+function elementImage(element, src, width, height, radius){
+  element.src = src
+  element.width = width
+  element.height = height
+  element.style.borderRadius = radius
+}
+
 export{elementSize, elementShape, elementText, elementDisplay}
