@@ -1,5 +1,5 @@
 import create from "./createElement.js"
-import styleSheet from "./styleSheet.js"
+import styleSheet1 from "./styleSheet.js"
 
 //* 기본 Layout 틀
 const root = document.getElementById('root')
