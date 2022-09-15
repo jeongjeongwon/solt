@@ -30,4 +30,9 @@ function elementImage(element, src, width, height, radius){
   element.style.borderRadius = radius
 }
 
-export{elementSize, elementShape, elementText, elementDisplay}
+function elementMarge(element, left, bottom){
+  element.style.margeLeft = left
+  element.style.margeBottom = bottom
+}
+
+export{elementSize, elementShape, elementText, elementDisplay, elementMarge}
