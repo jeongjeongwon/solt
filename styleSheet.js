@@ -1,7 +1,6 @@
-function elementSize(element, width, height, margin, boxSizing){
+function elementSize(element, width, height, boxSizing){
   element.style.width = width
   element.style.height = height
-  element.style.margin = margin
   element.style.boxSizing = boxSizing
 }
 
@@ -30,9 +29,11 @@ function elementImage(element, src, width, height, radius){
   element.style.borderRadius = radius
 }
 
-function elementMarge(element, left, bottom){
-  element.style.margeLeft = left
-  element.style.margeBottom = bottom
+function elementMarge(element, left, right, top, bottom){
+  element.style.marginLeft = left
+  element.style.marginRight = right
+  element.style.marginTop = top
+  element.style.marginBottom = bottom
 }
 
 export{elementSize, elementShape, elementText, elementDisplay, elementMarge}
