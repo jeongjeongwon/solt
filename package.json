@@ -18,6 +18,7 @@
   "homepage": "https://github.com/jeongjeongwon/solt#readme",
   "type": "module",
   "dependencies": {
-    "mysql": "^2.18.1"
+    "mysql": "^2.18.1",
+    "swiper": "^8.4.2"
   }
 }
